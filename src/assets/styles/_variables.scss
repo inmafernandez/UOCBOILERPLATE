@@ -8,7 +8,7 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 .button {
-  $primary-color: #6b717f;
+  $primary-color: #1f57db;
   color: $primary-color;
   border: 1px solid color.scale($primary-color, $lightness: 20%);
 }
