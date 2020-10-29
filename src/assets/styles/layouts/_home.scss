@@ -1,21 +1,152 @@
 body {
   margin: 0;
   padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  max-width: 300px;
-  height: auto;
-}
-
-.uoc-title {
   font-family: $font-family-serif;
+  font-size: 18px;
+  background-color: $cv-bg;
+  color: $cv-text;
+}
+
+.cv-title {
+  font-family: $font-family-sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: $uoc-corporate;
+  color: $cv-title;
+  text-transform:uppercase;
+  font-weight:bold;
 }
+.cv--title-sub-name {
+  font-family: $font-family-sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #25C7D9;
+}
+
+.cv--title-sub-date {
+  font-family: $font-family-sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #616A6B;
+}
+
+
+/*++++++++++++++++++++ Profile img+++++++++++++++++++++++++++++++*/
+.img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius:200px;
+}
+
+/*+++++++++++++ Contact me++++++++++++++*/
+.contenedor {
+  display: flex;
+  flex-direction: row; 
+  margin-top: 0px;
+}
+
+.icono-social { 
+  color: #616A6B;
+  display: flex;  
+  height: 70px;
+  align-items: center; 
+  justify-content: center;
+  margin: 2px; 
+  text-decoration: none; 
+  transition-duration: .3s;
+  width: 70px;
+}
+
+.redondo {
+  border-radius: 50%;
+}
+
+.icono-social:hover {  
+  color: #fff;
+}
+
+#facebook:hover  {
+  background-color: #3b5998;
+}
+
+#linkedin:hover  {
+  background-color: #0177B5;
+}
+
+#twitter:hover  {
+  background-color: #61c5ec;
+}
+
+#youtube:hover  {
+  background-color: #e31010;
+}
+
+.icono-social:active {
+  transform: scale(.9);
+}
+
+
+main {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+
+/*+++++++++++++ skills section ++++++++++++++*/
+
+.cv section {margin-bottom:30px;}
+.cv .skills section {
+  overflow:auto;
+  margin-bottom:0;}
+.cv .skills section p {
+  float:left;
+  max-width:50%;
+  word-break:break-word;
+}
+.cv .skills section span {
+  display:inline-block;
+  width:15px;
+  height:15px;
+  background:#bbb;
+  border-radius:15px;
+  float:right;
+  margin:0 1px;
+}
+.cv .skills section span.full {background:#4878D9;}
+
+/*columnas*/
+
+
+
+.cv {
+  clear:both;
+  padding:10px;
+}
+
+.cv .row {
+  float: right;
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+  padding:2%;
+}
+
+.cv .row:first-child { 
+  margin-left: 0; 
+  padding-bottom:50px;
+}
+
+.cv .row {
+  width: 40.8%;
+}
+
+
+/*mobil*/
+
+@media only screen and (max-width: 480px) {
+	.row {  margin: 1% 0 1% 0%;  margin-left: 0 !important;}
+	.cv .row { width: 100%; }
+}
+
+

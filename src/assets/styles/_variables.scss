@@ -1,14 +1,11 @@
+
 @use "sass:color";
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-serif: "Verdana","Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-.button {
-  $primary-color: #1f57db;
-  color: $primary-color;
-  border: 1px solid color.scale($primary-color, $lightness: 20%);
-}
+$cv-text: #000000;
+$cv-title:#4878D9;
+$cv-masterbrand:#25C7D9; 
+$cv-bg: color.scale($cv-masterbrand, $lightness: 90%);
